@@ -1910,8 +1910,6 @@ li {
 
   
 }
-
-
 @media screen and (max-width: 900px) {
   .header {
     padding-top: 70px;
@@ -2060,8 +2058,8 @@ height: 64px;
   .start__bubble {
     width: 171px;
     height: 109.11px;
-    left: 44%;
-    top: 26%;
+    left: 50%;
+    top: 22.5%;
   }
 
   .dignity__title {
