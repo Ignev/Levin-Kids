@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", function () {
   const accordionItem = document.querySelectorAll(".accordion__item");
 
   const body = document.body;
-
+  // body.style.width = window.clientWidth;
 //   const disableScroll = function () {
 //     let pagePosition = window.scrollY;
 //     document.body.classList.add("disable-scroll");
@@ -65,6 +65,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
   window.addEventListener("resize", () => {
     headerContent.style.width = header.clientWidth + "px";
+    // body.style.width = window.clientWidth;
   });
 
   const openModule = () => {
