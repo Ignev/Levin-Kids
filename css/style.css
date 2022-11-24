@@ -334,6 +334,10 @@ li {
   min-height: 100vh;
 }
 
+.start__people{
+  display: none;
+}
+
 .screen__content {
   display: flex;
   flex-direction: column;
@@ -1729,6 +1733,7 @@ li {
   font-family: "TT-Medium";
   padding-bottom: 18px;
   padding-top: 18px;
+  color: #284795;
 }
 .menu__item:last-child {
   border-bottom: 0;
@@ -1909,7 +1914,7 @@ li {
 
 @media screen and (max-width: 900px) {
   .header {
-    padding-top: 85px;
+    padding-top: 70px;
   }
   .burger {
     display: block;
@@ -1948,15 +1953,26 @@ li {
     background-image: url(../img/start-bg-mobile.png);
     background-size: 100%;
     padding-bottom: 100px;
-    background-size: contain;
+    background-size: cover;
     display: flex;
     align-items: center;
+  }
+
+  .start__people{
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    display: block;
+    position: absolute;
   }
   .screen__content {
     margin-bottom: 70px;
     display: flex;
     align-items: center;
     padding-top: 19px;
+    padding-left: 23px;
+    padding-right: 23px;
+    z-index: 100;
   }
 
   .we-content {
@@ -2022,6 +2038,9 @@ li {
   }
   .start_recording {
     display: block;
+    background-image: url(../img/btn-start.png);
+    width: 326px;
+height: 64px;
   }
   .tooth,
   .smile,
