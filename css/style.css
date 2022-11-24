@@ -1866,9 +1866,7 @@ li {
 }
 
 @media screen and (max-width: 1600px) {
-  .content {
-    width: 80%;
-  }
+
   .start__arrow {
     top: 61%;
     left: 37%;
@@ -2250,10 +2248,16 @@ li {
 
   /* Serves-Mobile */
 
+  .serves{
+    padding-bottom: 50px;
+  }
+
   .serves__accordion {
     display: flex;
     flex-direction: column;
   }
+
+
 
   .serves__title {
     font-size: 32px;
@@ -2435,7 +2439,7 @@ li {
     left: 23%;
   }
   .doctor {
-    padding-top: 350px;
+    padding-top: 450px;
     padding-bottom: 0;
     position: relative;
   }
@@ -2473,7 +2477,7 @@ li {
     position: absolute;
     width: 100%;
     height: auto;
-    top: -51%;
+    top: -75%;
   }
   .doctor__text::after {
     content: "";
@@ -2481,7 +2485,7 @@ li {
     height: 234px;
     position: absolute;
     left: 0;
-    top: -37%;
+    top: -45%;
     background: linear-gradient(
       180deg,
       rgba(255, 248, 244, 0) 0%,
@@ -2511,8 +2515,7 @@ li {
   }
 
   .slider{
-    width: 125%;
-    margin-left: -12.5%;
+    width: 100%;
   }
 
   .vk-mobile-link {
