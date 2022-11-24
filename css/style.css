@@ -1964,6 +1964,7 @@ li {
     z-index: 0;
     display: block;
     position: absolute;
+    width: 100%;
   }
   .screen__content {
     margin-bottom: 70px;
