@@ -1943,6 +1943,11 @@ height: 82px;
     left: 8%;
     bottom: 8%;
   }
+  .start__bubble {
+    position: absolute;
+    left: 67%;
+    top: 80%;
+  }
 }
 
 /* @media screen and (max-width: 900px) {
