@@ -1924,9 +1924,28 @@ height: 82px;
   .kid__serv {
     left: 56%;
   }
+  .options__item-sale::before{
+    display: none;
+  }
+  .serves{
+
+  }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1300px) {
+  .content{
+    width: 90%;
+  }
+  .serves{
+    padding-bottom: 250px;
+  }
+  .start__address {
+    left: 8%;
+    bottom: 8%;
+  }
+}
+
+/* @media screen and (max-width: 900px) {
   .header {
     padding-top: 70px;
   }
@@ -1976,7 +1995,7 @@ height: 82px;
   .banner__lable{
     display: none;
   }
-}
+} */
 
 @media screen and (max-width: 900px) {
   .header {
