@@ -2241,6 +2241,9 @@ li {
     z-index: 0;
     width: 105%;
   }
+  .dignity__item{
+    background-color: #fff;
+  }
   .dignity__item:nth-child(3) .dignity__img {
     margin-top: -20px;
     width: 60%;
