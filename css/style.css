@@ -1039,7 +1039,27 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-
+.options__item-sale{
+  background: #FCEFE8;
+  padding-top: 11px;
+  padding: 11px 30px;
+  border-radius: 15px;
+  box-sizing: content-box;
+  width: 100%;
+  margin-left: -30px;
+}
+.options__item-sale::before{
+  content: "";
+  background-image: url(../img/sale-desktop.png);
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 50.5%;
+  transform: translateY(-50%);
+  left: -140px;
+  width: 144.5px;
+height: 82px;
+}
 .options__desc {
   font-size: 18px;
   line-height: 28px;
