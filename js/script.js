@@ -10,23 +10,12 @@ window.addEventListener("DOMContentLoaded", function () {
   const headerContent = document.querySelector(".header__fixed");
   const header = document.querySelector(".header");
   const accordionItem = document.querySelectorAll(".accordion__item");
-
+  const nameInput = document.querySelector(".module__name")
   const body = document.body;
-  // body.style.width = window.clientWidth;
-//   const disableScroll = function () {
-//     let pagePosition = window.scrollY;
-//     document.body.classList.add("disable-scroll");
-//     document.body.dataset.position = pagePosition;
-//     document.body.style.top = -pagePosition + "px";
-//   };
 
-//   const enableScroll = function () {
-//     let pagePosition = parseInt(document.body.dataset.position, 10);
-//     document.body.style.top = "auto";
-//     document.body.classList.remove("disable-scroll");
-//     window.scroll({ top: pagePosition, left: 0 });
-//     document.body.removeAttribute("data-position");
-//   };
+  nameInput.addEventListener("input", () => {
+    nameInput.innerHTML.replace(/[^А-яЁё A-Za-z]/g,"") = nameInput.innerHTML.replace(/[^А-яЁё A-Za-z]/g,"")
+  })
 
   ymaps.ready(init);
   function init() {
@@ -126,4 +115,45 @@ window.addEventListener("DOMContentLoaded", function () {
   close.addEventListener("click", closeModule);
   menuOpenBtn.addEventListener("click", openMenu);
   menuCloseBtn.addEventListener("click", closeMenu);
+
+
+
+
+
+   [].forEach.call( document.querySelectorAll('.module__tel'), function(input) {
+    var keyCode;
+    function mask(event) {
+        event.keyCode && (keyCode = event.keyCode);
+        var pos = this.selectionStart;
+        if (pos < 3) event.preventDefault();
+        var matrix = "+7 (___) ___ ____",
+            i = 0,
+            def = matrix.replace(/\D/g, ""),
+            val = this.value.replace(/\D/g, ""),
+            new_value = matrix.replace(/[_\d]/g, function(a) {
+                return i < val.length ? val.charAt(i++) || def.charAt(i) : a
+            });
+        i = new_value.indexOf("_");
+        if (i != -1) {
+            i < 5 && (i = 3);
+            new_value = new_value.slice(0, i)
+        }
+        var reg = matrix.substr(0, this.value.length).replace(/_+/g,
+            function(a) {
+                return "\\d{1," + a.length + "}"
+            }).replace(/[+()]/g, "\\$&");
+        reg = new RegExp("^" + reg + "$");
+        if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) this.value = new_value;
+        if (event.type == "blur" && this.value.length < 5)  this.value = ""
+    }
+
+    input.addEventListener("input", mask, false);
+    input.addEventListener("focus", mask, false);
+    input.addEventListener("blur", mask, false);
+    input.addEventListener("keydown", mask, false)
+
+  });
+
+
+
 });
