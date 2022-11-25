@@ -529,8 +529,8 @@ li {
   align-items: center;
 }
 .we__title {
-  max-width: 683px;
-  max-height: 80px;
+  width: 683px;
+  height: 80px;
   margin-bottom: 50px;
   background-image: url(../img/we-title.png);
   background-size: contain;
