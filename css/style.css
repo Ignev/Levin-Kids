@@ -1039,8 +1039,8 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-.options__item-sale{
-  background: #FCEFE8;
+.options__item-sale {
+  background: #fcefe8;
   padding-top: 11px;
   padding: 11px 30px;
   border-radius: 15px;
@@ -1048,7 +1048,7 @@ li {
   width: 100%;
   margin-left: -30px;
 }
-.options__item-sale::before{
+.options__item-sale::before {
   content: "";
   background-image: url(../img/sale-desktop.png);
   position: absolute;
@@ -1058,7 +1058,7 @@ li {
   transform: translateY(-50%);
   left: -140px;
   width: 144.5px;
-height: 82px;
+  height: 82px;
 }
 .options__desc {
   font-size: 18px;
@@ -1139,6 +1139,9 @@ height: 82px;
 
 .kid__recording {
   align-self: flex-start;
+  background-image: url(../img/btn-large.png);
+  width: 346px;
+  height: 76px;
 }
 
 .kid__serv {
@@ -1363,11 +1366,8 @@ height: 82px;
   position: absolute;
   right: -4%;
 }
-.swiper-button-disabled {
-  opacity: 1 !important;
-}
 
-.swiper-button-disabled::after {
+.swiper-button-prev:hover::after {
   content: "";
   position: absolute;
   background-image: url(../img/next-dis.svg);
@@ -1377,7 +1377,7 @@ height: 82px;
   height: 60px;
 }
 
-.swiper-button-next.swiper-button-disabled::after {
+.swiper-button-next:hover:after {
   content: "";
   position: absolute;
   background-image: url(../img/next-dis.svg);
@@ -1924,19 +1924,28 @@ height: 82px;
   .kid__serv {
     left: 56%;
   }
-  .options__item-sale::before{
+  .options__item-sale::before {
     display: none;
   }
-  .serves{
-
+  .serves {
   }
+  .swiper-button-prev {
+    position: absolute;
+    left: 1%;
+    width: 60px;
+    height: 60px;
+  }
+  .swiper-button-next {
+    position: absolute;
+    right: 2%;
+  }  
 }
 
 @media screen and (max-width: 1300px) {
-  .content{
+  .content {
     width: 90%;
   }
-  .serves{
+  .serves {
     padding-bottom: 250px;
   }
   .start__address {
@@ -1948,10 +1957,10 @@ height: 82px;
     left: 67%;
     top: 80%;
   }
-  .bottom__tel .tel_numbers{
+  .bottom__tel .tel_numbers {
     font-size: 18px;
   }
-  .bottom__tel .tel_text{
+  .bottom__tel .tel_text {
     font-size: 11px;
   }
 }
@@ -2854,7 +2863,7 @@ height: 82px;
   .tel__text {
     font-size: 10px;
   }
-  .module__name{
+  .module__name {
     margin-bottom: 35px;
   }
   .module__input {
@@ -2865,7 +2874,7 @@ height: 82px;
     border-bottom: 1px solid #fff;
     outline: none;
   }
-  .module__label{
+  .module__label {
     margin-bottom: 43px;
   }
   .module__input::placeholder {
@@ -2885,7 +2894,7 @@ height: 82px;
     text-transform: uppercase;
     flex-direction: column;
   }
-  .module__submit{
+  .module__submit {
     margin-bottom: 20px;
   }
   .call__tel {
