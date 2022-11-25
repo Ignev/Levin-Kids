@@ -1948,6 +1948,12 @@ height: 82px;
     left: 67%;
     top: 80%;
   }
+  .bottom__tel .tel_numbers{
+    font-size: 18px;
+  }
+  .bottom__tel .tel_text{
+    font-size: 10px;
+  }
 }
 
 /* @media screen and (max-width: 900px) {
