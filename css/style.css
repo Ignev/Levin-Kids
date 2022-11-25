@@ -231,7 +231,6 @@ li {
   margin-bottom: 7px;
 }
 .address__name {
-  font-weight: 600;
   color: #eb433c;
   font-size: 27px;
   font-family: "TT-demi";
@@ -334,7 +333,7 @@ li {
   min-height: 100vh;
 }
 
-.start__people{
+.start__people {
   display: none;
 }
 
@@ -924,7 +923,7 @@ li {
   width: 70%;
   margin-right: 50px;
 }
-.serves__options{
+.serves__options {
   width: 100% !important;
 }
 .info__banner {
@@ -1808,8 +1807,6 @@ li {
   margin-bottom: 54px;
 }
 
-
-
 .menu .address__name {
   display: flex;
   align-items: center;
@@ -1817,11 +1814,11 @@ li {
   margin-bottom: 5px;
 }
 
-.menu .addres_desc{
+.menu .addres_desc {
   position: relative;
 }
 
-.menu .addres_desc::before{
+.menu .addres_desc::before {
   content: "";
   position: absolute;
   width: 42px;
@@ -1843,7 +1840,7 @@ li {
   font-family: "TT-Medium";
   margin-bottom: 15px;
 }
-.addres__str span{
+.addres__str span {
   white-space: nowrap;
 }
 .addrees__scheme,
@@ -1907,9 +1904,60 @@ li {
   .kid__serv {
     left: 56%;
   }
-
-  
 }
+
+@media screen and (max-width: 900px) {
+  .header {
+    padding-top: 70px;
+  }
+  .burger {
+    display: block;
+  }
+
+  .header_content {
+    justify-content: space-between;
+    margin: 0;
+    padding: 12px 17px;
+  }
+  .tel_numbers {
+    font-size: 21px;
+  }
+  .tel_text {
+    font-size: 12px;
+  }
+  .logo {
+    display: none;
+  }
+  .logo-mobile {
+    display: block;
+    width: 46px;
+    height: 46px;
+  }
+  .header_recording {
+    display: none;
+  }
+  .header_address {
+    display: none;
+  }
+  .header__nav {
+    display: none;
+  }
+  .content{
+    max-width: 600px;
+  }
+  .start__title{
+    font-family: "TT-bold";
+    font-size: 38px;
+    line-height: 48px;
+  }
+  .start-screen{
+    background-image: url(../img/start-bg-mobile.png);
+  }
+  .banner__lable{
+    display: none;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .header {
     padding-top: 70px;
@@ -1956,7 +2004,7 @@ li {
     align-items: center;
   }
 
-  .start__people{
+  .start__people {
     position: absolute;
     top: 0;
     z-index: 0;
@@ -2039,7 +2087,7 @@ li {
     display: block;
     background-image: url(../img/btn-start.png);
     width: 326px;
-height: 64px;
+    height: 64px;
   }
   .tooth,
   .smile,
@@ -2283,6 +2331,7 @@ height: 64px;
     border-style: solid;
     border-color: #e2e6f0;
     padding: 15px;
+    background-color: #fff;
   }
   .accordion__serv:last-child {
     border-radius: 0px 0px 10px 10px;
@@ -2710,6 +2759,7 @@ height: 64px;
     width: 328px;
     min-height: 865px;
     padding: 10px 17px;
+    padding-bottom: 125px;
     background-image: url(../img/module-bg-mobile.png);
     background-position: top;
     border-radius: 30px;
@@ -2719,7 +2769,7 @@ height: 64px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
   }
   .close {
     position: absolute;
@@ -2733,14 +2783,15 @@ height: 64px;
     line-height: 42px;
     font-family: "TT-demi";
     text-transform: uppercase;
-    margin-bottom: 33px;
+    margin-bottom: 27px;
     text-align: center;
   }
   .module__form {
     display: flex;
     flex-direction: column;
-    gap: 33px;
+    gap: 0;
     align-items: center;
+    justify-content: start;
   }
   .module__label {
     display: flex;
@@ -2753,6 +2804,9 @@ height: 64px;
   .tel__text {
     font-size: 10px;
   }
+  .module__name{
+    margin-bottom: 35px;
+  }
   .module__input {
     font-family: "TT";
     padding: 5px 0px;
@@ -2760,6 +2814,9 @@ height: 64px;
     font-size: 24px;
     border-bottom: 1px solid #fff;
     outline: none;
+  }
+  .module__label{
+    margin-bottom: 43px;
   }
   .module__input::placeholder {
     color: #fff;
@@ -2778,6 +2835,9 @@ height: 64px;
     text-transform: uppercase;
     flex-direction: column;
   }
+  .module__submit{
+    margin-bottom: 20px;
+  }
   .call__tel {
     color: #fff;
   }
@@ -2789,7 +2849,7 @@ height: 64px;
 
   .module__warning {
     position: absolute;
-    bottom: 23px;
+    bottom: -80px;
     white-space: normal;
     font-size: 18px;
     color: #ffffff;
@@ -2798,6 +2858,8 @@ height: 64px;
     font-size: 14px;
     line-height: 18px;
     text-align: center;
+    display: flex;
+    width: 100%;
     height: 20%;
   }
 }
